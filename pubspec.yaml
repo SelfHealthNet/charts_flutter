@@ -17,12 +17,13 @@ dependencies:
   charts_common:
     git:
       url: https://github.com/SelfHealthNet/charts_common.git
+      ref: b2f392202b886827d1f0ba2b4d5366b18197b90c
       # charts_common:
   #   path: ../charts_common/
   collection: ^1.14.5
   flutter:
     sdk: flutter
-  intl: ^0.19.0
+  intl: ^0.18.0
   logging: ^1.0.2
   meta: ^1.1.1
 

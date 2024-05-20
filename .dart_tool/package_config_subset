@@ -1,7 +1,7 @@
 charts_common
 2.12
-file:///Users/alfaiz/.pub-cache/git/charts_common-cf83f13b45720cc9b7453b53b63e02774082ad21/
-file:///Users/alfaiz/.pub-cache/git/charts_common-cf83f13b45720cc9b7453b53b63e02774082ad21/lib/
+file:///Users/alfaiz/.pub-cache/git/charts_common-b2f392202b886827d1f0ba2b4d5366b18197b90c/
+file:///Users/alfaiz/.pub-cache/git/charts_common-b2f392202b886827d1f0ba2b4d5366b18197b90c/lib/
 _fe_analyzer_shared
 3.0
 file:///Users/alfaiz/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-67.0.0/
@@ -123,9 +123,9 @@ http_parser
 file:///Users/alfaiz/.pub-cache/hosted/pub.dev/http_parser-4.0.2/
 file:///Users/alfaiz/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib/
 intl
-3.0
-file:///Users/alfaiz/.pub-cache/hosted/pub.dev/intl-0.19.0/
-file:///Users/alfaiz/.pub-cache/hosted/pub.dev/intl-0.19.0/lib/
+2.12
+file:///Users/alfaiz/.pub-cache/hosted/pub.dev/intl-0.18.1/
+file:///Users/alfaiz/.pub-cache/hosted/pub.dev/intl-0.18.1/lib/
 io
 2.12
 file:///Users/alfaiz/.pub-cache/hosted/pub.dev/io-1.0.4/

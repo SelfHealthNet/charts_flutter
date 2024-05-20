@@ -87,7 +87,7 @@
     },
     {
       "name": "charts_common",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/git/charts_common-cf83f13b45720cc9b7453b53b63e02774082ad21/",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/git/charts_common-b2f392202b886827d1f0ba2b4d5366b18197b90c/",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -201,9 +201,9 @@
     },
     {
       "name": "intl",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/intl-0.19.0",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/intl-0.18.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "io",
@@ -476,7 +476,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-05-20T10:29:51.349391Z",
+  "generated": "2024-05-20T10:34:25.459703Z",
   "generator": "pub",
   "generatorVersion": "3.3.4"
 }
