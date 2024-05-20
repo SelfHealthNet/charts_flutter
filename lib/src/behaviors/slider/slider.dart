@@ -60,7 +60,7 @@ class Slider<D> extends ChartBehavior<D> {
   final int? layoutPaintOrder;
 
   /// Initial domain position of the slider, in domain units.
-  final dynamic? initialDomainValue;
+  final dynamic initialDomainValue;
 
   /// Callback function that will be called when the position of the slider
   /// changes during a drag event.
@@ -116,7 +116,7 @@ class Slider<D> extends ChartBehavior<D> {
   factory Slider(
       {common.SelectionTrigger? eventTrigger,
       common.SymbolRenderer? handleRenderer,
-      dynamic? initialDomainValue,
+      dynamic initialDomainValue,
       String? roleId,
       common.SliderListenerCallback? onChangeCallback,
       bool snapToDatum = false,

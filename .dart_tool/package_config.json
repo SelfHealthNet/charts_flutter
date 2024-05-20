@@ -45,9 +45,9 @@
     },
     {
       "name": "build_daemon",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/build_daemon-4.0.2",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/build_daemon-4.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.0"
     },
     {
       "name": "build_resolvers",
@@ -57,9 +57,9 @@
     },
     {
       "name": "build_runner",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/build_runner-2.4.10",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/build_runner-2.4.9",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.0"
     },
     {
       "name": "build_runner_core",
@@ -161,19 +161,19 @@
       "name": "flutter",
       "rootUri": "file:///Users/alfaiz/SDK/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.2"
     },
     {
       "name": "flutter_test",
       "rootUri": "file:///Users/alfaiz/SDK/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.2"
     },
     {
       "name": "frontend_server_client",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/frontend_server_client-4.0.0",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "glob",
@@ -213,9 +213,9 @@
     },
     {
       "name": "js",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/js-0.7.1",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/js-0.6.7",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "2.19"
     },
     {
       "name": "json_annotation",
@@ -225,21 +225,21 @@
     },
     {
       "name": "leak_tracker",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/leak_tracker-10.0.4",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/leak_tracker-10.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.1"
     },
     {
       "name": "leak_tracker_flutter_testing",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.3",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.1"
     },
     {
       "name": "leak_tracker_testing",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/leak_tracker_testing-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.1"
     },
     {
       "name": "logging",
@@ -261,7 +261,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/meta-1.12.0",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/meta-1.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -399,19 +399,19 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/test-1.25.2",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/test-1.24.9",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/test_api-0.7.0",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/test_api-0.6.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "test_core",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/test_core-0.6.0",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/test_core-0.5.9",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -435,9 +435,9 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/vm_service-14.2.1",
+      "rootUri": "file:///Users/alfaiz/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.0"
     },
     {
       "name": "watcher",
@@ -476,10 +476,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-05-20T10:08:36.027952Z",
+  "generated": "2024-05-20T10:29:51.349391Z",
   "generator": "pub",
-  "generatorVersion": "3.4.0",
-  "flutterRoot": "file:///Users/alfaiz/SDK/flutter",
-  "flutterVersion": "3.22.0",
-  "pubCache": "file:///Users/alfaiz/.pub-cache"
+  "generatorVersion": "3.3.4"
 }
