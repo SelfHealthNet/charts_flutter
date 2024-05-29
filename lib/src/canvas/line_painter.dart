@@ -15,6 +15,7 @@
 
 import 'dart:ui' as ui show Shader;
 import 'dart:math' show Point, Rectangle;
+import 'package:charts_flutter/src/util/monotonex.dart';
 import 'package:flutter/material.dart';
 import 'package:charts_common/common.dart' as common show Color;
 
@@ -31,17 +32,18 @@ class LinePainter {
   /// to stroke-dasharray in SVG path elements. An odd number of values in the
   /// pattern will be repeated to derive an even number of values. "1,2,3" is
   /// equivalent to "1,2,3,1,2,3."
-  static void draw(
-      {required Canvas canvas,
-      required Paint paint,
-      required List<Point> points,
-      Rectangle<num>? clipBounds,
-      common.Color? fill,
-      common.Color? stroke,
-      bool? roundEndCaps,
-      double? strokeWidthPx,
-      List<int>? dashPattern,
-      ui.Shader? shader}) {
+  void draw(
+      {Canvas canvas,
+      Paint paint,
+      List<Point> points,
+      Rectangle<num> clipBounds,
+      common.Color fill,
+      common.Color stroke,
+      bool smoothLine,
+      bool roundEndCaps,
+      double strokeWidthPx,
+      List<int> dashPattern,
+      ui.Shader shader}) {
     if (points.isEmpty) {
       return;
     }
@@ -57,8 +59,7 @@ class LinePainter {
             clipBounds.height.toDouble()));
     }
 
-    paint.color = new Color.fromARGB(stroke!.a, stroke.r, stroke.g, stroke.b);
-
+    paint.color = new Color.fromARGB(stroke.a, stroke.r, stroke.g, stroke.b);
     if (shader != null) {
       paint.shader = shader;
     }
@@ -67,16 +68,16 @@ class LinePainter {
     if (points.length == 1) {
       final point = points.first;
       paint.style = PaintingStyle.fill;
-      canvas.drawCircle(new Offset(point.x.toDouble(), point.y.toDouble()),
-          strokeWidthPx ?? 0, paint);
+      canvas.drawCircle(new Offset(point.x, point.y), strokeWidthPx, paint);
     } else {
       if (strokeWidthPx != null) {
         paint.strokeWidth = strokeWidthPx;
       }
       paint.strokeJoin = StrokeJoin.round;
       paint.style = PaintingStyle.stroke;
-
-      if (dashPattern == null || dashPattern.isEmpty) {
+      if (smoothLine ?? false) {
+        _drawSmoothLine(canvas, paint, points);
+      } else if (dashPattern == null || dashPattern.isEmpty) {
         if (roundEndCaps == true) {
           paint.strokeCap = StrokeCap.round;
         }
@@ -92,8 +93,16 @@ class LinePainter {
     }
   }
 
+  /// Draws smooth lines between each point.
+  void _drawSmoothLine(Canvas canvas, Paint paint, List<Point> points) {
+    final path = new Path()
+      ..moveTo(points.first.x.toDouble(), points.first.y.toDouble());
+    MonotoneX.addCurve(path, points);
+    canvas.drawPath(path, paint);
+  }
+
   /// Draws solid lines between each point.
-  static void _drawSolidLine(Canvas canvas, Paint paint, List<Point> points) {
+  void _drawSolidLine(Canvas canvas, Paint paint, List<Point> points) {
     // TODO: Extract a native line component which constructs the
     // appropriate underlying data structures to avoid conversion.
     final path = new Path()
@@ -107,7 +116,7 @@ class LinePainter {
   }
 
   /// Draws dashed lines lines between each point.
-  static void _drawDashedLine(
+  void _drawDashedLine(
       Canvas canvas, Paint paint, List<Point> points, List<int> dashPattern) {
     final localDashPattern = new List.from(dashPattern);
 
@@ -232,11 +241,11 @@ class LinePainter {
   }
 
   /// Converts a [Point] into an [Offset].
-  static Offset _getOffset(Point point) =>
+  Offset _getOffset(Point point) =>
       new Offset(point.x.toDouble(), point.y.toDouble());
 
   /// Computes the distance between two [Offset]s, as if they were [Point]s.
-  static num _getOffsetDistance(Offset o1, Offset o2) {
+  num _getOffsetDistance(Offset o1, Offset o2) {
     final p1 = new Point(o1.dx, o1.dy);
     final p2 = new Point(o2.dx, o2.dy);
     return p1.distanceTo(p2);
